@@ -1,7 +1,7 @@
 <h1 style="text-align: center; color: ">How to... Husky 🐶</h1>
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/RrVvn488K8QAAAAd/prancing-happy-dog.gif" />
+  <img src="gif/husky.gif" />
 </p>
 
 #### This is pretty much the most basic guide to taming these mischievous Husky, but hopefully it'll give you a general overview on how you can use them. Believe me, they can brighten your day and do so much more! Husky is awesome! And together with other tools can take care of a good bulk of routine for you.
@@ -25,7 +25,7 @@ npm i -D husky
 
 Notice that it needs to be installed as a devDependency (check out your `package.json` to make sure it's installed properly).
 
-![alt text](img/image.png)
+![alt text](img/image-1.png)
 
 Congrats! You're on the way to get your own Husky!
 
@@ -41,19 +41,19 @@ npx husky init
 
 in your terminal. You'll see new `.husky` folder appear in your project's directory and a script file where your Husky will live.
 
-![alt text](img/image-8.png)
+![alt text](img/image-2.png)
 
 You're getting closer!
 
 ### ✨ Step 3:
 
-Go to your `package.json` file and replace the created `"prepare": "husky"` script with the following (don't forget to replace my `my-test-repo` folder name with your actual project's folder name):
+Go to your `package.json` file and replace the created `"prepare": "husky"` script with the following (don't forget to replace my `husky-guide` folder name with your actual project's folder name):
 
 ```json
-"prepare": "cd .. && husky my-test-repo/.husky"
+"prepare": "cd .. && husky husky-guide/.husky"
 ```
 
-![alt text](img/image-2.png)
+![alt text](img/image-3.png)
 
 You're one step closer to your prize!
 
@@ -64,29 +64,29 @@ Now it's time to run some console commands again! Just run this one:
 ```js
 npm run prepare
 ```
+
 Notice that a `_` folder appeared. This one actually shouldn't interest you at all (seriously, no trespassing, don't even touch it 😁).
 
-![alt text](img/image-3.png)
+![alt text](img/image-4.png)
 
 ### ✨ Step 5:
 
 You'll create files for your hooks in `.husky` and since we already have a `pre-commit` here let's work with that.
 
-![alt text](img/image-4.png)
+![alt text](img/image-5.png)
 
 We're actually getting to the most interesting part! You need to decide what you want your Husky to do for you! Let's say that mine is going to check file formatting for me using Prettier and not let me commit anything unless I fix it.
 
 That's exactly what I tell it to do:
 
 ```js
-cd my-test-repo
-
+cd husky-guide
 npm run format
 ```
 
 An important thing to notice it that with my first line I tell my Husky not to wander around and to go straight to my project's folder (❗remember to replace it with your actual folder's name).
 
-![alt text](img/image-5.png)
+![alt text](img/image-6.png)
 
 ### ✨ Step 6:
 
@@ -104,7 +104,7 @@ That's pretty exciting, isn't it? Can you feel your heart pounding? Great! Now r
 git commit -m 'chore: add Husky to the project'
 ```
 
-![alt text](img/image-6.png)
+![alt text](img/image-7.png)
 
 Perfect! Everything failed! It didn't let us commit the changes as expected. It's time to fix it.
 
@@ -113,10 +113,11 @@ Perfect! Everything failed! It didn't let us commit the changes as expected. It'
 I've fixed formatting in the mentioned files and run the command once again to check that everything is ok:
 
 ```js
+git add .
 git commit -m 'chore: add Husky to the project'
 ```
 
-![alt text](img/image-7.png)
+![alt text](img/image-8.png)
 
 🌟 Success! The changes are committed!
 
@@ -125,5 +126,5 @@ Congrats on getting your first Husky! Hopefully you'll want to get more of them!
 <h2 style="text-align: center; color: ">🍀 Good luck and remember you're awesome 🍀</h2>
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/lUtXbWM1cIsAAAAd/huskies-puppy.gif" />
+  <img src="gif/husky-bubbles.gif" />
 </p>
