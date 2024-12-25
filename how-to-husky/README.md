@@ -64,6 +64,7 @@ Now it's time to run some console commands again! Just run this one:
 ```js
 npm run prepare
 ```
+
 Notice that a `_` folder appeared. This one actually shouldn't interest you at all (seriously, no trespassing, don't even touch it 😁).
 
 ![alt text](img/image-3.png)
@@ -125,5 +126,5 @@ Congrats on getting your first Husky! Hopefully you'll want to get more of them!
 <h2 style="text-align: center; color: ">🍀 Good luck and remember you're awesome 🍀</h2>
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/lUtXbWM1cIsAAAAd/huskies-puppy.gif" />
+  <img src="https://giphy.com/gifs/bubbles-husky-blowing-k9b6CX6oZelhK" />
 </p>
